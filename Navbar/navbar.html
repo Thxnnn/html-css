@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>navbbar</title>
+</head>
+<body>
+    <header>
+        <div class="logo">THXNNN</div>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li>
+                    <a href="" class="active">Home</a>
+                </li>
+                <li>
+                    <a href="">Features</a>
+                </li>
+                <li>
+                    <a href="">Pricing</a>
+                </li>
+                <li>
+                    <a href="">About</a>
+                </li>
+                <li>
+                    <a href="">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <script>
+        var hamburger = document.querySelector(".hamburger");
+        hamburger.onclick = function() {
+            var navbar = document.querySelector(".nav-bar");
+            navbar.classList.toggle("active")
+        }
+    </script>
+</body>
+</html>
